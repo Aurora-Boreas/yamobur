@@ -245,6 +245,7 @@ font-family: Verdana, sans-serif;
 
 #content .form-wrapper fieldset {
     width: 320px;
+    border: none;
 }
 
 #content .form-wrapper form {
@@ -1182,7 +1183,7 @@ width: 312px;
         font-weight: normal;
     position: absolute;
     left: 40px;
-    top: -45px;
+    top: -35px;
     margin: 0 !important;
 }
     

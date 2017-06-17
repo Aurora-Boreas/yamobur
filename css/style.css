@@ -643,6 +643,7 @@ picture {
   font-family: "Verdana", Arial, sans-serif;
 }
 .calculator__form {
+  width: 100%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -662,6 +663,7 @@ picture {
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
+  margin: 0 auto;
   padding-top: 5px;
   padding-bottom: 5px;
 }

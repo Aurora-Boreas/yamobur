@@ -1,0 +1,46 @@
+.set-font(@font-size; @line-height) {
+  font-size: @font-size;
+  line-height: @line-height;
+}
+
+.media(@screen; @rules) {
+  @tablet-area: 750px;
+  @desktop-area: 970px;
+
+  & when (@screen = tablet) {
+    @media (min-width: 768px) {
+      @rules();
+    }
+  }
+
+  & when (@screen = desktop) {
+    @media (min-width: 1150px) {
+      @rules();
+    }
+  }
+}
+
+// .wrapper-container() {
+//   width: 320px;
+//   margin: 0 auto;
+//   padding: 0 29px;
+
+//   .media(tablet; {
+//     width: 668px;
+//     padding: 0;
+//   });
+
+//   .media(desktop; {
+//     width: 1050px;
+//     padding: 0;
+//   });
+// }
+
+// .box-shadow() {
+//   &:hover {
+//     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+//   }
+//   &:active {
+//     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+//   }
+// }

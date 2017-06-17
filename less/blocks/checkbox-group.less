@@ -1,0 +1,66 @@
+.checkbox-group {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.checkbox-group__item {
+  width: 33.33%;
+  text-align: center;
+  background: #d0d0d0;
+}
+
+.checkbox-group__input[type='radio'] {
+    display: none;
+}
+
+.checkbox-group__label {
+  width: 100%;
+  border: 2px solid #e4e4e4;
+}
+
+.checkbox-group__label:hover {
+   border: 2px solid  #cf461a;
+}
+
+#manual-technique:checked ~ .checkbox-group__label[for="manual-technique"],
+#mini-truck:checked ~ .checkbox-group__label[for="mini-truck"],
+#automobile-wagon:checked ~ .checkbox-group__label[for="automobile-wagon"] {
+  border: 2px solid #cf461a;
+}
+
+.checkbox-group__label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  padding-top: 65px;
+  padding-bottom: 10px;
+
+}
+
+.checkbox-group__label::before {
+  content: '';
+  position: absolute;
+  left: 30px;
+  top: 0;
+    width: 58px;
+    height: 60px;
+}
+
+.checkbox-group__item--manualtechnique label::before {
+  background: transparent url('../images/manual-technique-ico.png') no-repeat;
+  z-index: 100;
+}
+
+.checkbox-group__item--minitruck label::before {
+  background: transparent url('../images/mini-truck-ico.png') no-repeat;
+  z-index: 100;
+}
+
+.checkbox-group__item--autowagon label::before {
+  background: transparent url('../images/automobile-wagon-ico.png') no-repeat;
+  z-index: 100;
+}
+
+

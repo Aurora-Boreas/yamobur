@@ -22,8 +22,8 @@
             <span class="top-header__logo top-header__logo--text">У нас самые выгодные цены на аренду ямобура!</span>
           </div>
           <div class="contacts">
-            <a class="contacts__phone" href="tel:8 916 677-70-67">8 916 677-70-67</a>
-            <span class="contacts__text">Ежедневно с 8.00-22.00</span>
+            <a class="contacts contacts--phone" href="tel:8 916 677-70-67">
+            <span class="contacts contacts--text">Ежедневно с 8.00-22.00</span>
           </div>
         </div>
       </section>
@@ -40,25 +40,20 @@
           </div>
 
           <div class="promo">
-            <div class="promo__wrapper">
-              <h2 class="promo__title">Стоимость аренды за смену:</h3>
-              <div class="promo__items">
-                <div class="promo__item">
-                  <h3 class="promo__description">Ручная техника</h3>
-                  <span class="promo__cost promo__cost--manual">10 000 р.</span>
-                </div>
-                <div class="promo__item">
-                  <h3 class="promo__description">Мини погрузчик</h3>
-                  <span class="promo__cost promo__cost--loader">15 000 р.</span>
-                </div>
-                <div class="promo__item">
-                  <h3 class="promo__description">Грузовой автомобиль</h3>
-                  <span class="promo__cost promo__cost--truck">14 000 р.</span>
-                </div>
+            <h2 class="promo__title">Стоимость аренды за смену:</h3>
+              <div class="promo__item">
+                <h3 class="promo__description">Ручная техника</h3>
+                <span class="promo__cost">10 000 р.</span>
               </div>
-                <div class="promo__add">+ 30 руб, за 1 км. от МКАД</div>
-
-            </div>
+              <div class="promo__item">
+                <h3 class="promo__description">Мини погрузчик</h3>
+                <span class="promo__cost">15 000</span>
+              </div>
+              <div class="promo__item">
+                <h3 class="promo__description">Грузовой автомобиль</h3>
+                <span class="promo__cost">14 000 р.</span>
+              </div>
+              <div class="promo__add">+ 30 руб, за 1 км. от МКАД</div>
           </div>
 
         </div>
@@ -106,7 +101,7 @@
             <div class="calculator__item">
               <label for="drilling-depth" class="calculator__label">Глубина бурения:</label>
               <input type="text" name="drilling_depth" id="drilling-depth" value=""  class="calculator__input" required/>
-              <span>м.&nbsp;&nbsp;</span>
+              <span>м.</span>
             </div>
             <div class="calculator__item">
               <label for="number-openings" class="calculator__label">Количество отверстий:</label>
@@ -118,34 +113,33 @@
               <input type="text" name="distance" id="distance" value=""  class="calculator__input"required/>
               <span>км.</span>
             </div>
-            <div class="calculator__item calculator__item--tech">
+            <div class="calculator__item">
               <label class="calculator__label">Техника:</label>
                 <div class="checkbox-group">
-
                     <div class="checkbox-group__item checkbox-group__item--manualtechnique">
-                        <input type="radio" name="technique" id="manual-technique" class="checkbox-group__input"/>
+                        <input type="checkbox" name="manual_technique" id="manual-technique" class="checkbox-group__input"/>
                         <label for="manual-technique" class="checkbox-group__label">Ручная техника</label>
                     </div>
                     <div class="checkbox-group__item checkbox-group__item--minitruck">
-                        <input type="radio" checked="checked" name="technique" id="mini-truck" class="checkbox-group__input"/>
+                        <input type="checkbox" checked="checked" name="mini_truck" id="mini-truck" class="checkbox-group__input"/>
                         <label for="mini-truck" class="checkbox-group__label">Мини погрузчик</label>
                     </div>
                     <div class="checkbox-group__item checkbox-group__item--autowagon">
-                        <input type="radio" name="technique" id="automobile-wagon" class="checkbox-group__input"/>
+                        <input type="checkbox" name="automobile_wagon" id="automobile-wagon" class="checkbox-group__input"/>
                         <label for="automobile-wagon" class="checkbox-group__label">Грузовой автомобиль</label>
                     </div>
                 </div>
             </div>
             <hr class="separator">
             <button class="btn btn--calc" type="button">Рассчитать стоимость бурения</button>
-            <a  class="btn btn--order btn--calc-order" href="zakazat-yamobur.html">Заказать ямобур</a>
+            <a  class="btn btn--order" href="zakazat-yamobur.html">Заказать ямобур</a>
           </form>
         </div>
-        <div class="calculator-result">
-          <div class="calculator-result__wrapper">
-            <p class="calculator-result__explanation">Стоимость бурения:<span id="calculation-cost">0</span> руб.</p>
-            <p class="calculator-result__explanation">+ транспортные расходы:<span id="transportation-cost">0</span> руб.</p>
-            <p class="calculator-result__resume">Итого:<span class="calculator-result__summary" id="summary-cost">0</span> руб.</p>
+        <div class="calculator__result">
+          <div class="calculator__wrapper">
+            <p class="calculator__explanation">Стоимость бурения:<span id="calculation-cost">0</span> руб.</p>
+            <p class="calculator__explanation">+ транспортные расходы:<span id="transportation-cost">0</span> руб.</p>
+            <p class="calculator__resume">Итого:<span id="summary-cost">0</span> руб.</p>
           </div>
         </div>
       </section>
@@ -179,19 +173,18 @@
 
               <img class="cards-item__img" width="174" height="131" src="images/yamobur-tadano-m.jpg" title="Японский ямобур Tadano" alt="Японский ямобур Tadano в аренду для бурения отверстий. Маневренность и компактные размеры японского ямобура смогут пробурить отверстия в труднодоступных местах" />
 
-              <div class="cards-item__price">
-                <p class="cards-item__rent">Аренда за смену: 14000 рублей</p>
-                <p class="cards-item__rent-plus">+ 30 руб, за 1 км. от МКАД</p>
-              </div>
-
               <form action="zakazat-yamobur/" method="post" class="cards-item__order">
                  <input type="hidden" value="5535" name="page_id"/>
                  <input type="submit" value="Заказать ямобур" class="btn btn--order"/>
               </form>
 
+              <div class="cards-item__price">
+                <p class="cards-item__rent">Аренда за смену: 14000 рублей</p>
+                <p class="cards-item__rent-plus">+ 30 руб, за 1 км. от МКАД</p>
+              </div>
             </article>
 
-            <article class="cards-item">
+            <article class="cards-item-item">
               <h1 class="cards-item__description">Аренда ямобура Bobcat (минипогрузчик)</h1>
               <div class="cards-item__detalis">
                 <span class="cards-item__dropdown">Краткая характеристика</span>
@@ -237,7 +230,7 @@
                   <dd class="cards-item__q">количество отверстий за одну смену:</dd>
                   <dl class="cards-item__a">20-30 шт.</dl>
                   <dd class="cards-item__q">Ямобур используются для бурения под:</dd>
-                  <dl class="cards-item__a">забор, фундамент, сваи ТИСЭ, столбы ЛЭП, насаждения</dl>
+                  <dl class="cards-item-item__a">забор, фундамент, сваи ТИСЭ, столбы ЛЭП, насаждения</dl>
                 </dl>
                 <a href="yamobur/ruchnoi-motobur-yamobur/" class="btn btn--more">Подробней</a>
               </div>
@@ -260,7 +253,7 @@
               <div class="cards-item__detalis">
                 <span class="cards-item__dropdown">Краткая характеристика</span>
                 <dl class="cards-item__text">
-                  <dd class="cards-item__q">глубина бурения:</dd>
+                  <dd class="cards-item__q">глубина бурения:</dd>количество отверстий за одну смену:
                   <dl class="cards-item__a">до 10 метров</dl>
                   <dd class="cards-item__q">диаметр бурения:</dd>
                   <dl class="cards-item__a">80 - 800 мм.</dl>
@@ -489,9 +482,8 @@
           <p class="page-footer__text">Аренда ямобура - по самым выгодным ценам!</p>
           <p class="page-footer__text">Услуги по бурению оказываем в Москве, Московской области и ближайших областях</p>
           <div class="contacts">
-            <p class="contacts__phone contacts__phone--footer">8 916 677-70-67</p>
-            <span class="contacts__text contacts__text--footer">Ежедневно с 8.00-22.00</span>
-            <a href="tel:+7 (916) 677-70-67" class="btn btn--call-us">Позвонить</a>
+            <a class="contacts contacts--phone" href="tel:8 916 677-70-67"></a>
+            <span class="contacts contacts--text contacts--footer">Ежедневно с 8.00-22.00</span>
           </div>
         </div>
         <div class="page-footer__item">

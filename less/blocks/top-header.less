@@ -1,0 +1,32 @@
+.top-header {
+  background-color: @bgc-thead;
+  width: 100%;
+}
+
+.top-header__wrapper {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 11px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-header__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &--link {
+    margin-bottom: 10px;
+    color: #FFFfff;
+    text-decoration: none;
+    font-family: "Impact", Arial, sans-serif;
+    .set-font(22px, 24px);
+  }
+
+  &--text {
+    display: none;
+  }
+}

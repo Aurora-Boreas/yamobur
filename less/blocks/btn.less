@@ -1,0 +1,67 @@
+.btn {
+  display: block;
+  color: #FFF;
+  border: none;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  border-radius: 5px;
+
+  &--calc,
+  &--calc-order {
+    width: 270px;
+  }
+
+  &--calc,
+  &--order {
+    margin: auto;
+    font-family: "Verdana", Arial, sans-serif;
+    font-size: 14px;
+    background-image: linear-gradient(to bottom, @bgc-gb-l 20%, @bgc-gb-d 80%);
+    box-shadow: @bgc-gb-sh 1px 2px 3px;
+    margin-bottom: 20px;
+  }
+
+  &--calc:hover,
+  &--calc:active,
+  &--order:hover,
+  &--active:active {
+   background-image: linear-gradient(to bottom, @bgc-gb-d 20%, @bgc-gb-l 80%);
+  }
+
+  &--calc-order {
+    display: none;
+
+  }
+
+  &--more,
+  &--call-us {
+    width: 174px;
+    margin: 0 auto;
+    font-family: "Verdana", Arial, sans-serif;
+    font-size: 14px;
+    background-image: linear-gradient(to bottom, @bgc-ob-l 20%, @bgc-ob-d 80%);
+    box-shadow: @bgc-ob-sh 1px 2px 3px;
+  }
+
+  &--more:hover,
+  &--more:active,
+  &--call-us:hover,
+  &--call-us:active {
+    background-image: linear-gradient(to bottom, @bgc-ob-d 20%, @bgc-ob-l 80%);
+  }
+
+  &--order {
+    width: 174px;
+  }
+
+  &--show-more {
+    color: #6cad00;
+    padding: 8px 30px 8px 20px;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    background: #e8e8e8 url('../images/arrow-down--green.png') no-repeat 95% 50%;
+  }
+}

@@ -508,6 +508,8 @@ picture {
   text-align: center;
 }
 .promo__description {
+  display: block;
+  min-height: 30px;
   color: #FFF;
   font-family: "Verdana", Arial, sans-serif;
   font-weight: bold;
@@ -554,6 +556,7 @@ picture {
   font-family: "Verdana", Arial, sans-serif;
   font-size: 18px;
   line-height: 18px;
+  text-align: center;
 }
 .main-nav {
   width: 100%;

@@ -1,8 +1,14 @@
 .checkbox-group {
-  width: 100%;
+  width: 320px;
   display: flex;
   flex-direction: row;
   margin-bottom: 20px;
+
+  .media (tablet; {
+    width: 486px;
+    margin-left: auto;
+    margin-right: auto;
+    })
 }
 
 .checkbox-group__item {
@@ -42,10 +48,14 @@
 .checkbox-group__label::before {
   content: '';
   position: absolute;
-  left: 30px;
+  left: calc(50%-28px);
   top: 0;
     width: 58px;
     height: 60px;
+
+    .media(tablet; {
+       left: 50px;
+      });
 }
 
 .checkbox-group__item--manualtechnique label::before {

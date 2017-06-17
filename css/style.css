@@ -384,6 +384,11 @@ picture {
   background: url("../images/top-bg.jpg") no-repeat scroll top center;
   background-size: cover;
 }
+@media (min-width: 768px) {
+  .page-header {
+    background-size: contain;
+  }
+}
 .top-header {
   background-color: #75a209;
   width: 100%;
@@ -399,6 +404,30 @@ picture {
       flex-direction: column;
   -ms-flex-align: center;
       align-items: center;
+}
+@media (min-width: 768px) {
+  .top-header__wrapper {
+    width: 320px;
+    margin: 0 auto;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    padding-top: 10px;
+  }
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  .top-header__wrapper {
+    width: 740px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 768px) and (min-width: 1150px) {
+  .top-header__wrapper {
+    width: 1050px;
+    padding: 0;
+  }
 }
 .top-header__logo {
   display: -ms-flexbox;
@@ -470,11 +499,32 @@ picture {
   padding-top: 6px;
   padding-bottom: 6px;
 }
+@media (min-width: 768px) {
+  .header-middle__wrapper {
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .offer {
   display: none;
 }
 .promo {
-  width: 100%;
+  width: 320px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .promo {
+    width: 740px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 1150px) {
+  .promo {
+    width: 1050px;
+    padding: 0;
+  }
 }
 .promo__wrapper {
   padding-left: 6px;
@@ -593,9 +643,6 @@ picture {
   background: transparent url('../images/icon-menu-close.svg') no-repeat 100% 50%;
 }
 .main-nav__list {
-  display: none;
-}
-.main-nav__list--open {
   width: 100%;
   display: -ms-flexbox;
   display: flex;
@@ -670,9 +717,12 @@ picture {
 .calculator__item--tech {
   -ms-flex-direction: column;
       flex-direction: column;
+  width: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 .calculator__label,
-.calculator span {
+.calculator__item span {
   font-size: 13px;
   font-weight: bold;
   color: #777777;
@@ -713,19 +763,28 @@ picture {
   font-weight: bold;
 }
 .calculator-result__wrapper span {
-  font-size: 18px;
   color: #3d8400;
+}
+.calculator-result__cost {
+  font-size: 16px;
 }
 .calculator-result__summary {
   font-size: 18px;
 }
 .checkbox-group {
-  width: 100%;
+  width: 320px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
   margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .checkbox-group {
+    width: 486px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .checkbox-group__item {
   width: 33.33%;
@@ -757,10 +816,15 @@ picture {
 .checkbox-group__label::before {
   content: '';
   position: absolute;
-  left: 30px;
+  left: calc(22%);
   top: 0;
   width: 58px;
   height: 60px;
+}
+@media (min-width: 768px) {
+  .checkbox-group__label::before {
+    left: 50px;
+  }
 }
 .checkbox-group__item--manualtechnique label::before {
   background: transparent url('../images/manual-technique-ico.png') no-repeat;
@@ -856,12 +920,44 @@ picture {
   font-size: 24px;
   color: #000;
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
   font-family: "Verdana", Arial, sans-serif;
   font-weight: normal;
 }
 .cards__visible,
 .cards__hidden {
   text-align: center;
+}
+@media (min-width: 768px) {
+  .cards__visible,
+  .cards__hidden {
+    width: 320px;
+    margin: 0 auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+  }
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  .cards__visible,
+  .cards__hidden {
+    width: 740px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 768px) and (min-width: 1150px) {
+  .cards__visible,
+  .cards__hidden {
+    width: 1050px;
+    padding: 0;
+  }
 }
 .cards-item {
   background-color: #f5f5f5;
@@ -873,6 +969,22 @@ picture {
   padding-bottom: 10px;
   margin-bottom: 20px;
 }
+@media (min-width: 768px) {
+  .cards-item {
+    position: relative;
+    width: 49%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 .cards-item__description {
   display: block;
   width: 100%;
@@ -882,11 +994,31 @@ picture {
   font-weight: normal;
   font-size: 17px;
 }
+@media (min-width: 768px) {
+  .cards-item__description {
+    width: 48%;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bold;
+    border: none;
+    margin-top: 0;
+    margin-right: 150px;
+    -ms-flex-order: 1;
+        order: 1;
+  }
+}
 .cards-item__detalis {
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
   margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .cards-item__detalis {
+    padding-top: 0;
+    -ms-flex-order: 3;
+        order: 3;
+  }
 }
 .cards-item__dropdown {
   padding-right: 15px;
@@ -921,8 +1053,28 @@ picture {
   border-radius: 10px;
   margin-bottom: 10px;
 }
+@media (min-width: 768px) {
+  .cards-item__img {
+    width: 48%;
+    position: absolute;
+    top: 12px;
+    right: 10px;
+  }
+}
 .cards-item__price {
   margin-bottom: 18px;
+}
+@media (min-width: 768px) {
+  .cards-item__price {
+    -ms-flex-order: 2;
+        order: 2;
+    width: 160px;
+    background: url("../images/price-sticker-right.png") no-repeat 70% 0;
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 18px;
+  }
 }
 .cards-item__rent {
   color: #000;
@@ -931,6 +1083,24 @@ picture {
   font-weight: bold;
   line-height: 18px;
   padding-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .cards-item__rent {
+    color: #165b0c;
+    padding-top: 8px;
+  }
+}
+@media (min-width: 768px) {
+  .cards-item__rent-plus {
+    color: #666666;
+  }
+}
+@media (min-width: 768px) {
+  .cards-item__order {
+    width: 100%;
+    -ms-flex-order: 4;
+        order: 4;
+  }
 }
 .advanced {
   display: none;

@@ -3,46 +3,78 @@
   display: flex;
   flex-direction: row;
   margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
 
   .media (tablet; {
     width: 486px;
     margin-left: auto;
     margin-right: auto;
-    })
+    });
+
+  .media(desktop; {
+    width: 505px;
+  })
 }
 
 .checkbox-group__item {
   width: 33.33%;
   text-align: center;
   background: #d0d0d0;
+
+  .media(desktop; {
+    display: flex;
+    flex-direction: row;
+    background: none;
+  })
 }
 
 .checkbox-group__input[type='radio'] {
     display: none;
+
+    .media(desktop; {
+      display: block;
+      margin-right: 10px;
+      margin-top: 33px;
+  })
 }
 
 .checkbox-group__label {
   width: 100%;
   border: 2px solid #e4e4e4;
-}
-
-.checkbox-group__label:hover {
-   border: 2px solid  #cf461a;
-}
-
-#manual-technique:checked ~ .checkbox-group__label[for="manual-technique"],
-#mini-truck:checked ~ .checkbox-group__label[for="mini-truck"],
-#automobile-wagon:checked ~ .checkbox-group__label[for="automobile-wagon"] {
-  border: 2px solid #cf461a;
-}
-
-.checkbox-group__label {
   position: relative;
   display: block;
   cursor: pointer;
   padding-top: 65px;
   padding-bottom: 10px;
 
+  .media(desktop; {
+    font-size: 11px;
+    line-height: 14px;
+    width: 75px;
+    padding-top: 27px;
+    padding-left: 64px;
+    padding-bottom: 0;
+    })
+
+}
+
+.checkbox-group__label:hover {
+   border: 2px solid  #cf461a;
+
+   .media(desktop; {
+      border: 2px solid transparent;
+    })
+}
+
+#manual-technique:checked ~ .checkbox-group__label[for="manual-technique"],
+#mini-truck:checked ~ .checkbox-group__label[for="mini-truck"],
+#automobile-wagon:checked ~ .checkbox-group__label[for="automobile-wagon"] {
+  border: 2px solid #cf461a;
+
+  .media(desktop; {
+      border: 2px solid transparent;
+    })
 }
 
 .checkbox-group__label::before {
@@ -56,6 +88,11 @@
     .media(tablet; {
        left: 50px;
       });
+
+    .media(desktop; {
+      left: 0;
+      top: 0;
+    })
 }
 
 .checkbox-group__item--manualtechnique label::before {

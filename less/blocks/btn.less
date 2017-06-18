@@ -11,11 +11,16 @@
   &--calc,
   &--calc-order {
     width: 270px;
+
+    .media(desktop; {
+      margin-top: 10px;
+      })
   }
 
   &--calc,
   &--order {
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     font-family: "Verdana", Arial, sans-serif;
     font-size: 14px;
     background-image: linear-gradient(to bottom, @bgc-gb-l 20%, @bgc-gb-d 80%);
@@ -51,6 +56,17 @@
   &--call-us:active {
     background-image: linear-gradient(to bottom, @bgc-ob-d 20%, @bgc-ob-l 80%);
   }
+
+  .media(desktop; {
+    &--more {
+      position: absolute;
+      content: "подробней";
+      height: 38px;
+      bottom: 48px;
+      left: 25px;
+    }
+
+    });
 
   &--order {
     width: 174px;

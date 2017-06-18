@@ -13,13 +13,40 @@
   align-items: center;
   font-family: "Verdana", Arial, sans-serif;
 
+  .media(desktop; {
+    flex-direction: row;
+    justify-content: center;
+    });
+
   & p {
     font-weight: bold;
+
+    .media(desktop; {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    });
   }
 
   & span {
     color: #3d8400;
   }
+}
+
+.calculator-result__left-group {
+  .media(desktop; {
+    width: 50%;
+    text-align: right;
+    padding-right: 25px;
+    border-right: 1px solid #ababab;
+    });
+}
+
+.calculator-result__right-group {
+  .media(desktop; {
+    width: 50%;
+    text-align: left;
+    padding-left: 25px;
+    });
 }
 
 .calculator-result__cost {

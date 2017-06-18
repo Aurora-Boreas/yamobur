@@ -85,34 +85,37 @@
         <div class="calculator__wrapper">
           <form action="zakazat-yamobur/" method="post" class="calculator__form">
             <h2 class="calculator__title">Калькулятор стоимости бурения:</h2>
-            <div class="calculator__item">
-              <label for="diameter" class="calculator__label">Диаметр отверстий:</label>
-              <select name="diameter" id="diameter" class="calculator__input"  required>
-                  <option value=""></option>
-                  <option value="100">100</option>
-                  <option value="150">150</option>
-                  <option value="200">200</option>
-                  <option value="250">250</option>
-                  <option value="300">300</option>
-                  <option value="350">350</option>
-                  <option value="400">400</option>
-                  <option value="450">450</option>
-                  <option value="500">500</option>
-                  <option value="550">550</option>
-                  <option value="600">600</option>
-              </select>
-              <span>мм.</span>
+            <div class="calculator__right-group">
+              <div class="calculator__item">
+                <label for="diameter" class="calculator__label">Диаметр отверстий:</label>
+                <select name="diameter" id="diameter" class="calculator__input"  required>
+                    <option value=""></option>
+                    <option value="100">100</option>
+                    <option value="150">150</option>
+                    <option value="200">200</option>
+                    <option value="250">250</option>
+                    <option value="300">300</option>
+                    <option value="350">350</option>
+                    <option value="400">400</option>
+                    <option value="450">450</option>
+                    <option value="500">500</option>
+                    <option value="550">550</option>
+                    <option value="600">600</option>
+                </select>
+                <span>мм.</span>
+              </div>
+              <div class="calculator__item">
+                <label for="drilling-depth" class="calculator__label">Глубина бурения:</label>
+                <input type="text" name="drilling_depth" id="drilling-depth" value=""  class="calculator__input" required/>
+                <span>м.&nbsp;&nbsp;</span>
+              </div>
+              <div class="calculator__item">
+                <label for="number-openings" class="calculator__label">Количество отверстий:</label>
+                <input type="text" name="number-openings" id="number-openings" value=""  class="calculator__input" required/>
+                <span>шт.</span>
+              </div>
             </div>
-            <div class="calculator__item">
-              <label for="drilling-depth" class="calculator__label">Глубина бурения:</label>
-              <input type="text" name="drilling_depth" id="drilling-depth" value=""  class="calculator__input" required/>
-              <span>м.&nbsp;&nbsp;</span>
-            </div>
-            <div class="calculator__item">
-              <label for="number-openings" class="calculator__label">Количество отверстий:</label>
-              <input type="text" name="number-openings" id="number-openings" value=""  class="calculator__input" required/>
-              <span>шт.</span>
-            </div>
+            <div class="calculator__left-group">
             <div class="calculator__item">
               <label for="distance" class="calculator__label">Удаленность от МКАД:</label>
               <input type="text" name="distance" id="distance" value=""  class="calculator__input"required/>
@@ -135,6 +138,7 @@
                         <label for="automobile-wagon" class="checkbox-group__label">Грузовой<br>автомобиль</label>
                     </div>
                 </div>
+                </div>
             </div>
             <hr class="separator">
             <button class="btn btn--calc" type="button">Рассчитать стоимость бурения</button>
@@ -143,9 +147,13 @@
         </div>
         <div class="calculator-result">
           <div class="calculator-result__wrapper">
-            <p class="calculator-result__explanation">Стоимость бурения:<span id="calculation-cost" class="calculator-result__cost">0</span> руб.</p>
-            <p class="calculator-result__explanation">+ транспортные расходы:<span id="transportation-cost" class="calculator-result__cost">0</span> руб.</p>
-            <p class="calculator-result__resume">Итого:<span class="calculator-result__summary" id="summary-cost">0</span> руб.</p>
+            <div class="calculator-result__left-group">
+              <p class="calculator-result__explanation">Стоимость бурения:<span id="calculation-cost" class="calculator-result__cost">0</span> руб.</p>
+              <p class="calculator-result__explanation">+ транспортные расходы:<span id="transportation-cost" class="calculator-result__cost">0</span> руб.</p>
+            </div>
+            <div class="calculator-result__right-group">
+              <p class="calculator-result__resume">Итого:<span class="cardslculator-result__summary" id="summary-cost">0</span> руб.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -272,7 +280,7 @@
                 <a href="yamobur/teleskopicheskij-yamobur-aichi/" class="btn btn--more">Подробней</a>
               </div>
 
-              <img class="cards__img" width="174" height="131" src="images/yamobur-aichi-m.jpg" title="Телескопический ямобур AICHI" alt="Телескопический ямобур AICHI со стрелой 11,7 метров. Аренда машины с крано-буровой установкой AICHI" />
+              <img class="cards-item__img" width="174" height="131" src="images/yamobur-aichi-m.jpg" title="Телескопический ямобур AICHI" alt="Телескопический ямобур AICHI со стрелой 11,7 метров. Аренда машины с крано-буровой установкой AICHI" />
 
               <form action="zakazat-yamobur/" method="post" class="cards-item__order">
                  <input type="hidden" value="5971" name="page_id"/>
@@ -302,7 +310,7 @@
                 <a href="yamobur/mini-ekskavator-yamobur/" class="btn btn--more">Подробней</a>
               </div>
 
-              <img class="cards__img" width="174" height="131" src="images/yamobur-mini-ekskavator-m.jpg" title="Мини-экскаватор ямобур" alt="Мини экскаватор ямобур в аренду. Аренда мини экскаватора с ямобуром диаметров от 100-500 мм." />
+              <img class="cards-item__img" width="174" height="131" src="images/yamobur-mini-ekskavator-m.jpg" title="Мини-экскаватор ямобур" alt="Мини экскаватор ямобур в аренду. Аренда мини экскаватора с ямобуром диаметров от 100-500 мм." />
 
               <form action="zakazat-yamobur/" method="post" class="cards-item__order">
                  <input type="hidden" value="5972" name="page_id"/>

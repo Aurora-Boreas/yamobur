@@ -9,6 +9,12 @@
   justify-content: center;
   align-items: center;
 
+  .media(desktop; {
+    .wrapper-container();
+    background: url('../images/main-menu-bg.png') no-repeat;
+    height: 65px;
+    line-height: 50px;
+  });
 }
 
 .main-nav__toggle {
@@ -31,6 +37,10 @@
   &--nojs {
     background: transparent url('../images/icon-menu-close.svg') no-repeat 100% 50%;
   }
+
+  .media(desktop; {
+    display: none;
+  });
 }
 
 .main-nav__list {
@@ -60,6 +70,19 @@
       color: #ffd800;
     }
 
+    .media(desktop; {
+      position: relative;
+      top: 35px;
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-around;
+
+      & a {
+        margin: 0px 16px;
+        padding-top: 0;
+      }
+    });
+
 }
 
 
@@ -74,6 +97,41 @@
 .main-nav__item {
 
   background-color: #bb3d0e;
+
+  .media(desktop; {
+      display: flex;
+      background-color: transparent;
+
+      &--game {
+        margin-right: 0;
+        background: url('../images/game-menu-bg.png') no-repeat;
+        height: 134px;
+        margin-right: 0;
+        position: relative;
+        top: -64px;
+        width: 175px;
+
+        & a {
+          position: relative;
+          top: 70px;
+          left: 0;
+          text-align: left;
+          width: 64px;
+          color: #14400f;
+          display: block;
+          font-family: "Tahoma";
+          font-size: 14px;
+          font-weight: bold;
+          line-height: 18px;
+
+          &:hover,
+          &:active {
+            color: #14400f;
+          }
+        }
+      }
+  });
+
 }
 
 

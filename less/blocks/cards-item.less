@@ -2,7 +2,7 @@
   background-color: @bgc-card;
   border-radius: 15px;
   padding-top: 10px;
-  box-shadow: 0 0 7px 0 @bgc-gb-sh;
+  box-shadow: 1px 1px 3px 1px @bgc-gb-sh;
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 10px;
@@ -17,8 +17,12 @@
     justify-content: space-between;
     padding-left: 15px;
     padding-right: 15px;
-
     });
+
+    .media(desktop;{
+      padding-left: 25px;
+      padding-right: 25px;
+    })
 }
 
 .cards-item__description {
@@ -40,6 +44,18 @@
     margin-right: 150px;
     order: 1;
   });
+
+  .media(desktop; {
+    width: 100%;
+    display: block;
+    min-height: 50px;
+    margin-right: 0;
+    padding-top:  13px;
+    border-bottom: 1px solid #ababab;
+    font-family: "Verdana", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    })
 }
 
 .cards-item__detalis {
@@ -52,6 +68,11 @@
     padding-top: 0;
     order: 3;
    });
+
+   .media(desktop;{
+    width: 50%;
+    order: 2;
+  })
 }
 
 .cards-item__dropdown {
@@ -61,7 +82,9 @@
   text-decoration: underline;
   background: transparent url('../images/arrow-up.png') no-repeat  100% 50%;
 
-
+  .media(desktop;{
+    display: none;
+  })
 }
 
 .cards-item__text {
@@ -71,6 +94,11 @@
   justify-content: space-between;
   margin-top: 14px;
   font-size: 14px;
+
+  .media(desktop;{
+    font-size: 12px;
+    line-height: 18px;
+  })
 }
 
 .cards-item__q,
@@ -86,15 +114,22 @@
 }
 
 .cards-item__img {
+  width: 174px;
+  height: 131px;
   border-radius: 10px;
   margin-bottom: 10px;
 
   .media(tablet;{
-    width: 48%;
     position: absolute;
     top: 12px;
     right: 10px;
   });
+
+  .media(desktop;{
+    top: 95px;
+    right: 25px;
+
+  })
 }
 
 .cards-item__price {
@@ -109,6 +144,15 @@
     font-weight: bold;
     line-height: 18px;
   });
+
+  .media(desktop; {
+    order: 3;
+    margin-left: auto;
+    background: url("../images/price-sticker.png") no-repeat 70% 0;
+    width: 225px;
+    height: 68px;
+    text-align: center;
+    })
 }
 
 .cards-item__rent {
@@ -122,12 +166,29 @@
   .media(tablet;{
     color: #165b0c;
     padding-top: 8px;
-  })
+  });
+
+  .media(desktop;{
+    font-family:  "Verdana", Arial, sans-serif;
+    font-size:  15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 2px;
+  });
 }
 
 .cards-item__rent-plus {
   .media(tablet; {
     color: @calc-color;
+    });
+
+  .media(desktop; {
+    border-top: 1px solid #768d2e;
+    font-size: 12px;
+    font-weight: normal;
+    color: #3c3c3c;
+    margin-left: 25px;
+    margin-right: 25px;
     });
 }
 
@@ -136,4 +197,10 @@
     width: 100%;
     order: 4;
     });
+
+    .media(desktop; {
+    order: 2;
+    width: 174px;
+    padding-top: 171px;
+    })
 }

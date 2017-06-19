@@ -69,8 +69,8 @@
         <div class="main-nav__wrapper">
           <button class="main-nav__toggle" type="button">Меню</button>
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="o-kompanii.html" title="О компании" >О компании</a></li>
-            <li class="main-nav__item"><a href="yamobur.html" title="Ямобур" >Ямобур</a></li>
+            <li class="main-nav__item active"><a href="/o-kompanii/" title="О компании" >О компании</a></li>
+            <li class="main-nav__item"><a href="/yamobur/" title="Ямобур" >Ямобур</a></li>
             <li class="main-nav__item"><a href="/stoimost-bureniya/" title="Стоимость бурения" >Стоимость бурения</a></li>
             <li class="main-nav__item"><a href="/zakazat-yamobur/" title="Заказать Ямобур" >Заказать ямобур</a></li>
             <li class="main-nav__item"><a href="/kontakty/" title="Контакты" >Контакты</a></li>
@@ -82,94 +82,96 @@
     </header>
 
     <main class="main-page">
-      <section class="calculator">
-        <div class="calculator__wrapper">
-          <form action="zakazat-yamobur/" method="post" class="calculator__form">
-            <h2 class="calculator__title">Калькулятор стоимости бурения:</h2>
-            <div class="calculator__right-group">
-              <div class="calculator__item">
-                <label for="diameter" class="calculator__label">Диаметр отверстий:</label>
-                <select name="diameter" id="diameter" class="calculator__input"  required>
-                    <option value=""></option>
-                    <option value="100">100</option>
-                    <option value="150">150</option>
-                    <option value="200">200</option>
-                    <option value="250">250</option>
-                    <option value="300">300</option>
-                    <option value="350">350</option>
-                    <option value="400">400</option>
-                    <option value="450">450</option>
-                    <option value="500">500</option>
-                    <option value="550">550</option>
-                    <option value="600">600</option>
-                </select>
-                <span>мм.</span>
-              </div>
-              <div class="calculator__item">
-                <label for="drilling-depth" class="calculator__label">Глубина бурения:</label>
-                <input type="text" name="drilling_depth" id="drilling-depth" value=""  class="calculator__input" required/>
-                <span>м.&nbsp;&nbsp;</span>
-              </div>
-              <div class="calculator__item">
-                <label for="number-openings" class="calculator__label">Количество отверстий:</label>
-                <input type="text" name="number-openings" id="number-openings" value=""  class="calculator__input" required/>
-                <span>шт.</span>
-              </div>
-            </div>
-            <div class="calculator__left-group">
-            <div class="calculator__item">
-              <label for="distance" class="calculator__label">Удаленность от МКАД:</label>
-              <input type="text" name="distance" id="distance" value=""  class="calculator__input"required/>
-              <span>км.</span>
-            </div>
-            <div class="calculator__item calculator__item--tech">
-              <label class="calculator__label">Техника:</label>
-                <div class="checkbox-group">
+      <div class="main-page__wrapper">
 
-                    <div class="checkbox-group__item checkbox-group__item--manualtechnique">
-                        <input type="radio" name="technique" id="manual-technique" class="checkbox-group__input"/>
-                        <label for="manual-technique" class="checkbox-group__label">Ручная<br>техника</label>
-                    </div>
-                    <div class="checkbox-group__item checkbox-group__item--minitruck">
-                        <input type="radio" checked="checked" name="technique" id="mini-truck" class="checkbox-group__input"/>
-                        <label for="mini-truck" class="checkbox-group__label">Мини<br>погрузчик</label>
-                    </div>
-                    <div class="checkbox-group__item checkbox-group__item--autowagon">
-                        <input type="radio" name="technique" id="automobile-wagon" class="checkbox-group__input"/>
-                        <label for="automobile-wagon" class="checkbox-group__label">Грузовой<br>автомобиль</label>
-                    </div>
-                </div>
-                </div>
+        <aside class="aside-bar">
+          <div class="aside-bar__item">
+            <div class="aside-bar__title">
+              <a href="yamobur/" title="Наша техника">Наша техника</a>
             </div>
-            <hr class="separator">
-            <button class="btn btn--calc" type="button">Рассчитать стоимость бурения</button>
-            <a  class="btn btn--order btn--calc-order" href="zakazat-yamobur.html">Заказать ямобур</a>
-          </form>
-        </div>
-        <div class="calculator-result">
-          <div class="calculator-result__wrapper">
-            <div class="calculator-result__left-group">
-              <p class="calculator-result__explanation">Стоимость бурения:<span id="calculation-cost" class="calculator-result__cost">0</span> руб.</p>
-              <p class="calculator-result__explanation">+ транспортные расходы:<span id="transportation-cost" class="calculator-result__cost">0</span> руб.</p>
-            </div>
-            <div class="calculator-result__right-group">
-              <p class="calculator-result__resume">Итого:<span class="cardslculator-result__summary" id="summary-cost">0</span> руб.</p>
-            </div>
+            <ul class="aside-bar__list">
+              <li class="aside-bar__list-item">
+                <a href="href="yamobur/yaponskiy-yamobur-tadano/" title="Японский ямобур Tadano в аренду для бурения отверстий. Маневренность и компактные размеры японского ямобура смогут пробурить отверстия в труднодоступных местах"" class="aside-bar__link">
+                  <img width="auto" height="auto" src="images/yamobur-tadano-m.jpg" title="Японский ямобур Tadano" alt="Японский ямобур Tadano в аренду для бурения отверстий. Маневренность и компактные размеры японского ямобура смогут пробурить отверстия в трудно доступных местах" />
+                  Японский ямобур Tadano
+                </a>
+              </li>
+              <li class="aside-bar__list-item">
+                <a href="yamobur/yamobur-bobcat-minipogruzchik/" title="Ямобур Bobcat (минипогрузчик)" class="aside-bar__link">
+                <img width="auto" height="auto" src="/images/yamobur-bobcat-minipogr-m.jpg" title="Ямобур Bobcat (минипогрузчик)" alt="Ямобур Bobcat (минипогрузчик)" />
+                Ямобур Bobcat (минипогрузчик)
+                </a>
+              </li>
+              <li class="aside-bar__list-item">
+                <a href="yamobur/ruchnoi-motobur-yamobur/" title="Бурение ямобуром отверстий, ям и скважин" class="aside-bar__link">
+                <img width="auto" height="auto" src="images/ruchnoi-motobur-yamobur-m.jpg" title="Ручной мотобур (ямобур) " alt="Бурение ямобуром отверстий, ям и скважин" />
+                Ручной мотобур (ямобур)
+                </a>
+              </li>
+              <li class="aside-bar__list-item">
+                <a href="yamobur/teleskopicheskij-yamobur-aichi/" title="Телескопический ямобур AICHI со стрелой 11,7 метров. Аренда машины с крано-буровой установкой AICHI" class="aside-bar__link">
+                <img width="auto" height="auto" src="images/yamobur-aichi-m.jpg" title="Телескопический ямобур AICHI" alt="Телескопический ямобур AICHI со стрелой 11,7 метров. Аренда машины с крано-буровой установкой AICHI" />
+                Телескопический ямобур AICHI
+                </a>
+              </li>
+              <li class="aside-bar__list-item">
+                <a href="yamobur/mini-ekskavator-yamobur/" title="Мини экскаватор ямобур в аренду. Аренда мини экскаватора с ямобуром диаметров от 100-500 мм." class="aside-bar__link">
+                <img width="auto" height="auto" src="images/yamobur-mini-ekskavator-m.jpg" title="Мини-экскаватор ямобур" alt="Мини экскаватор ямобур в аренду. Аренда мини экскаватора с ямобуром диаметров от 100-500 мм." />
+                Мини-экскаватор ямобур
+                </a>
+              </li>
+              <li class="aside-bar__list-item">
+                <a href="yamobur/yamobur-kamaz/" title="Ямобур камаз отлично справляется с бурением отверстий в труднопроходимых местах.Аренда ямобура камаз  для бурения отверстий " class="aside-bar__link">
+                <img width="auto" height="auto" src="images/yamobur-kamaz-m.jpg" title="Ямобур КамАЗ" alt="Ямобур камаз отлично справляется с бурением отверстий в труднопроходимых местах.Аренда ямобура камаз  для бурения отверстий " />
+                Ямобур КамАЗ
+                </a>
+              </li>
+              <li class="aside-bar__list-item">
+                <a href="yamobur/yamobur-zil/" title="Зил ямобур в аренду для бурения отверстий. Ямобур зил осуществляет бурение в различных работах" class="aside-bar__link">
+                <img width="auto" height="auto" src="images/yamobur-zil-m.jpg" title="Ямобур ЗИЛ" alt="Зил ямобур в аренду для бурения отверстий. Ямобур зил осуществляет бурение в различных работах" />
+                Ямобур ЗИЛ
+                </a>
+              </li>
+              <li class="aside-bar__list-item">
+                <a href="yamobur/yamobur-gaz/" title="Ямобур газ 66 в аренду для бурения различных неглубоких отверстий. Бурение отверстий ямобуром газ 66 при сложных строительных условиях" class="aside-bar__link">
+                <img width="auto" height="auto" src="images/yamobur-gaz-m.jpg" title="Ямобур ГАЗ" alt="Ямобур газ 66 в аренду для бурения различных неглубоких отверстий. Бурение отверстий ямобуром газ 66 при сложных строительных условиях" />
+                Ямобур ГАЗ
+                </a>
+              </li>
+              <li class="aside-bar__list-item">
+                <a href="yamobur/yamobur-MTZ/" title="Ямобур МТЗ в аренду для бурения отверстий. Ямобур  на МТЗ - идеальный вариант для бурение отверстий под насаждения и столбы" class="aside-bar__link">
+                <img width="auto" height="auto" src="images/yamobur-mtz-m.jpg" title="Ямобур МТЗ" alt="Ямобур мтз в аренду для бурения отверстий. Ямобур  на мтз - идеальный вариант для бурение отверстий под насаждения и столбы" />
+                Ямобур МТЗ
+                </a>
+              </li>
+              <li class="aside-bar__list-item">
+                <a href="yamobur/yamobur-jcb/" title="Ямобур JCB. Ямобур на базе JCB трактора в аренду" class="aside-bar__link">
+                <img width="auto" height="auto" src="images/yamobur-jcb-m.jpg" title="Ямобур JCB" alt="Ямобур JCB. Ямобур на базе JCB трактора в аренду" />
+                Ямобур JCB
+                </a>
+              </li>
+            </ul>
           </div>
-        </div>
-      </section>
+        </aside>
 
-      <section class="about">
-        <div class="about__wrapper">
-          <p class="about__text">Сегодня строительство часто нуждается в бурении отверстий в земле, без этого очень сложно обойтись. Нужно поставить около дома забор или столбы для электропередачи, или какие-либо другие объекты. Как правило, необходимы не ямы, а ровные и аккуратные отверстия. Значит, бурение отверстий будет важным и необходимым этапом. В таком деле лучше не экономить, а обратиться к профессионалам, которые быстро и качественно выполнят всю работу.</p>
-        </div>
-      </section>
+        <div class="central-content">
+          <div class="breadcrumbs">
+            <ul>
+              <li>
+                <a href="/" >Главная</a>
+              </li>
+              <li>
+                <span>Ямобур</span>
+              </li>
+            </ul>
+          </div>
 
-      <section class="cards">
+          <section class="cards cards--yamobur">
         <div class="cards__wrapper">
-          <h2 class="cards__title">Аренда Ямобура</h2>
-          <div class="cards__visible">
-            <article class="cards-item">
+          <h2 class="cards__title">Ямобур</h2>
+          <div class="cards__visible cards__visible--yamobur">
+
+          <article class="cards-item cards-item--yamobur">
               <h1 class="cards-item__description">Аренда ямобура Tadano</h1>
               <div class="cards-item__detalis">
                 <span class="cards-item__dropdown">Краткая характеристика</span>
@@ -200,7 +202,7 @@
 
             </article>
 
-            <article class="cards-item">
+            <article class="cards-item cards-item--yamobur">
               <h1 class="cards-item__description">Аренда ямобура Bobcat (минипогрузчик)</h1>
               <div class="cards-item__detalis">
                 <span class="cards-item__dropdown">Краткая характеристика</span>
@@ -233,8 +235,8 @@
 
           <button class="btn btn--show-more">Показать еще</button>
 
-          <div class="cards__hidden">
-            <article class="cards-item">
+          <div class="cards__hidden cards__hidden--yamobur">
+            <article class="cards-item cards-item--yamobur">
               <h1 class="cards-item__description">Аренда ручного мотобура (ямобура)</h1>
               <div class="cards-item__detalis">
                 <span class="cards-item__dropdown">Краткая характеристика</span>
@@ -264,7 +266,7 @@
               </div>
             </article>
 
-            <article class="cards-item">
+            <article class="cards-item cards-item--yamobur">
               <h1 class="cards-item__description">Аренда ямобура AICHI</h1>
               <div class="cards-item__detalis">
                 <span class="cards-item__dropdown">Краткая характеристика</span>
@@ -294,7 +296,7 @@
               </div>
             </article>
 
-            <article class="cards-item">
+            <article class="cards-item cards-item--yamobur">
               <h1 class="cards-item__description">Аренда мини-экскаватора ямобура</h1>
               <div class="cards-item__detalis">
                 <span class="cards-item__dropdown">Краткая характеристика</span>
@@ -324,7 +326,7 @@
               </div>
             </article>
 
-            <article class="cards-item">
+            <article class="cards-item cards-item--yamobur">
               <h1 class="cards-item__description">Аренда ямобура Камаз</h1>
               <div class="cards-item__detalis">
                 <span class="cards-item__dropdown">Краткая характеристика</span>
@@ -354,7 +356,7 @@
               </div>
             </article>
 
-            <article class="cards-item">
+            <article class="cards-item cards-item--yamobur">
               <h1 class="cards-item__description">Аренда ямобура ЗИЛ</h1>
               <div class="cards-item__detalis">
                 <span class="cards-item__dropdown">Краткая характеристика</span>
@@ -384,7 +386,7 @@
               </div>
             </article>
 
-            <article class="cards-item">
+            <article class="cards-item cards-item--yamobur">
               <h1 class="cards-item__description">Аренда ямобура Газ</h1>
               <div class="cards-item__detalis">
                 <span class="cards-item__dropdown">Краткая характеристика</span>
@@ -414,7 +416,7 @@
               </div>
             </article>
 
-            <article class="cards-item">
+            <article class="cards-item cards-item--yamobur">
               <h1 class="cards-item__description">Аренда ямобура МТЗ</h1>
               <div class="cards-item__detalis">
                 <span class="cards-item__dropdown">Краткая характеристика</span>
@@ -444,7 +446,7 @@
               </div>
             </article>
 
-            <article class="cards-item">
+            <article class="cards-item cards-item--yamobur">
               <h1 class="cards-item__description">Аренда ямобура JCB</h1>
               <div class="cards-item__detalis">
                 <span class="cards-item__dropdown">Краткая характеристика</span>
@@ -478,20 +480,155 @@
         </div>
       </section>
 
-      <section class="advanced">
-        <div class="advanced__wrapper">
-          <p class="advanced__text">При современных темпах строительства крайне сложно выкапывать многочисленные разновеликие отверстия вручную, тем более, если требуются скважины с ровными, отвесными стенками. Аренда ямобура наращивает популярность с каждым годом, и востребованность таких работ в капитальном строительстве и частной застройке 15 лет назад подтолкнула нашу компанию &laquo;Аренда-Ямобура.ру&raquo; на активное приобретение различной техники и пополнение парка специализированными буровыми машинами, различными по мощности и габаритам. Сейчас мы выполняем бурение грунтов любой категории сложности на территории Москвы, Московской области и ближайших областей. </p>
-          <p class="advanced__text">Рассмотрим более детально, для каких целей может пригодиться аренда ямобура. Традиционно, пойдём от простого к сложному и самым обыденным и дешёвым окажется бурение ям под зелёные насаждения. Если дело касается небольшого садового участка, на котором решено посадить небольшие кусты и плодовые деревья, то вполне можно обойтись ручным ямобуром. С его помощью можно оперативно и с минимальными энергозатратами выкопать ямы глубиной до 2-х метров. Насаждения бывают очень внушительных размеров, поэтому если вы планируете украсить участок крупномерами, то для глубоких ям потребуется ямобур на базе Bobcat, Tanado или ГАЗе.</p>
-          <p class="advanced__text">Аренда ямобура также понадобится, чтобы сделать бурение под забор. В этом случае мощность базовой машины напрямую зависит не столько от глубины бурения, так как для забора большая глубина не нужна, сколько от количества столбов. Огораживаемые участки могут быть значительными по площади, например, территории складов или охраняемых автостоянок при крупных бизнес-центрах. На дачном участке можно справится и ручным ямобуром, но при установке столбов в промышленных масштабах, а особенно, если местность пересечённая или нет возможности подъехать вплотную к оси бурения, то для таких целей мы можем предложить мощные ямобуры на базе ГАЗа, КАМАЗа или трактора МТЗ.</p>
-          <p class="advanced__text">Под монтаж винтовых свай, несомненно, пригодится аренда ямобура на базе мини-погрузчика Bobcat, японского автомобиля с телескопической установкой Tadano или на базе КамАЗа также с телескопической установкой. Беспроблемное завинчивание свай для фундамента возможно только при соблюдении всех технологических требований. Надёжность свайного основания зависит от строгой вертикальности положения свай. Вручную такой точности достигнуть сложно, поэтому в нашем арсенале есть разная техника, в том числе и для участков, расположенных в труднодоступных местах или с тяжёлым каменистым грунтом.</p>
-          <p class="advanced__text">Самостоятельное бурение под сваи ТИСЭ - процесс очень трудоёмкий и сильно затратный по времени, так как его следует выполнять строго на глубину промерзания грунта. Кроме того, если участок находится в сильно пересечённой местности и на пучинистых почвах, то технология ТИСЭ остаётся единственным оптимальным вариантом. Для таких отверстий аренда ямобура окажется особенно экономически выгодной и привлекательной по скорости производства работ. Для таких задач мы предлагаем выполнить бурение&nbsp; ручным ямобуром или механизированным буром ТИСЭ на базе мини-погрузчика Bobcat или ГАЗ-66 ВМ-302.</p>
-          <p class="advanced__text">Прокладка линий электропередач и бурение отверстий под столбы ЛЭП является следующим направлением, для которого аренда ямобура незаменима. Соблюдение технологии монтажа силовых столбов требует использования специализированных бурильных установок, которые не только готовят отверстия, но и устанавливают в них столбы. Глубина отверстия под линии электропередач обычно достигает 7 м, а диаметр отверстия варьируется от 250 до 800 мм. Учитывая технологические нормативы, для разных условий бурения отверстий под ЛЭП подойдут наши бурильные установки на базе мини-погрузчика Bobcat, ГАЗа, КАМАЗа с телескопической стрелой или трактора МТЗ.</p>
-          <p class="advanced__text">Услуга бурения скважин под воду и аренда ямобура, предлагаемая компанией &laquo;Аренда-Ямобура.ру&raquo;, будет интересна тем, для кого подключение к центральному водоснабжению либо невозможно, либо непригодно из-за слабости напора в трубе. Для достижения водоносных слоёв в нашем автопарке есть специализированный ямобур на базе ЗИЛа. Машину можно использовать и в сильно холмистой местности, и там, где от транспорта требуется повышенная выносливость и проходимость. </p>
-          <p class="advanced__text">Аренда ямобура в нашей компании - самая эффективная из-за широкого выбора машин и механизмов, и самая экономически выгодная по цене среди предложений на рынке. Если вам нужно быстрое и профессиональное бурение отверстий на территории Москвы и ближайших областей - обращайтесь в компанию &laquo;Аренда-Ямобура.ру&raquo;! Мы гарантируем высокое качество работ и  пунктуальность, а постоянно обновляемый автопарк позволяет выполнять заказы по высшему разряду.</p>
+      <section class="about">
+        <div class="about__wrapper">
+          <p class="about__text"><strong>Ямобур</strong> &mdash; это специализированный
+инструмент или навесное оборудование для высверливания в земле различных
+углублений: ям, скважин, отверстий и лунок для посадки саженцев, установки столбов
+и ЛЭП, опор мостов и прочих вертикальных конструкций, закрепляемых в земле, а
+также для проведения инженерных и геологических изысканий, прокладывания
+коммуникаций, благоустройства дворового пространства. Традиционно глубина
+бурения ямобурами не превышает 10-12 м. Их основным рабочим элементом являются
+сменные шнековые или лопастные буры. </p>
+<p class="about__text">Интересно,
+что первый в истории ямобур был сконструирован в 1945 году в СССР. Новинка была
+придумана не из праздного любознайства, а в чисто утилитарных целях, для
+решения весьма насущной задачи. В честь празднования победы в Великой
+Отечественной войне руководство г. Нижний Новгород приняло решение посадить
+вокруг города 10 000 плодовых деревьев. После войны рабочих рук не хватало, и
+поэтому требовалась механизация процесса выкапывания огромного количества ям.
+Разработку соответствующего агрегата поручили местному Горьковскому автозаводу.
+Не удивительно, что базой первого в мире самоходного ямобура стал серийный
+автомобиль ГАЗ-67.</p>
+<p class="about__text">Современный <strong>ямобур</strong>
+представляет собой достаточно много типов, которые отличаются друг от друга не
+только размерами, но глубиной бурения и производительностью. Ручные ямобуры с
+винтовой лопастью и остриём на конце активно заказывают для благоустройства дачных
+участков. Он удобен для установки шпунтового ограждения вокруг котлована, заборных
+столбов, опор освещения, посадки растений и бурения небольших скважин для воды.
+Ручной ямобур востребован геодезическими и изыскательскими компаниями для исследования
+геологических пластов и водоразведки. </p>
+<p class="about__text">Ручной <strong>ямобур</strong>
+состоит из базовой станины и станины с ползунами для мотора-редуктора, шнека или
+стержня с винтовой гранью, работающего по принципу сверла, со штангами бурового
+типа, реверсивного электродвигателя, редуктора, лебёдки, кабеля и
+дистанционного пульта управления. Ручной ямобур мобилен и удобен, с ним могут
+управляться 1-2 человека. Чтобы увеличить срок службы инструмента, ручные
+ямобуры производят из особой стали из твёрдых сплавов с покрытием порошковой
+эмалью. Для облегчения бурения и подъёма грунта на поверхность шнековые насадки
+дополнительно оборудуют секаторами.</p>
+<p class="about__text">Навесной <strong>ямобур</strong>
+предназначен для установки на строительные машины, такие как трактор или
+погрузчик. Агрегирование тракторов и грузовиков ямобурами сегодня становится всё
+более актуальным. Стоимость навесного инструмента по сравнению с самоходными машинами
+значительно ниже, существенную роль играет и удобство использования, простота
+обслуживания и хранения, и при этом профессионально высокая мощность. Благодаря
+своей универсальности навесные ямобуры расширяют сферу применения мини-тракторов
+и существенно удешевляют стоимость работ. </p>
+<p class="about__text">Компания
+&laquo;Аренда-Ямобура.ру&raquo; обладает практически полным набором вариаций
+отечественного и импортного бурового оборудования, представленного на
+российском рынке. Специалисты нашей компании установили ямобур на мини-погрузчик Bobcat, японский автомобиль с
+телескопической установкой Tadano, на грузовик ГАЗ, на Камаз, трактор МТЗ. Для
+лучшего бурения пришлось даже существенно усовершенствовать и конструктивно
+доработать погрузчик Bobcat, чтобы он работал без сбоев. В компании, конечно,
+есть и мобильная, ручная версия ямобура, который легко помещается в багажник
+легкового автомобиля. </p>
+<p class="about__text">Наш навесной
+ямобур помимо основного шнека оснащён приспособлением для завинчивания винтовых
+свай. Мощный крутящий момент установки значительно повышает скорость и качество
+завинчивания свай. Навесной телескопический кран с вылетом до 12 м может
+завинчивать сваи в труднодоступных местах, а также несколько
+близкорасположенных свай стоя на одном месте. Именно такие навесные ямобуры
+применяются для сооружения строительных опор, монтажа опор линий электропередач
+и связи, переходов и мостов, свайных оснований, крупномасштабных промышленных
+работ.</p>
+<p class="about__text">
+Исключительная
+мобильность мини-погрузчика Bobcat и повышенная проходимость трактора и Камаза
+позволяют нам универсально использовать навесной ямобур. Выполнение работ на
+бездорожье, в заболоченных, мёрзлых, плотных грунтах с камнями или покрытых
+асфальтом не представляет сложности для нашего оборудования. В компании
+&laquo;Аренда-Ямобура.ру&raquo; вам всегда могут предложить самые выгодные цены на
+аренду ямобуров и подобрать наиболее подходящую машину, оптимальную для использования
+на крупных промышленных объектах или в тесных рамках городских улиц или
+загородных участков.</p>
         </div>
       </section>
+        </div>
+
+          <aside class="aside-bar">
+          <div class="aside-bar__wrapper">
+            <div class="aside-bar__item">
+              <div class="aside-bar__title">
+                <a href="uslugi-yamobura-uslugi-bureniya/" title="Наша техника">Наши услуги</a>
+              </div>
+              <div class="aside-bar__second-title">
+                <a href="burenie-otverstii/" title="Бурение отверстий">Бурение отверстий</a>
+              </div>
+              <ul class="aside-bar__list">
+                <li class="aside-bar__list-item"><a href="burenie-otverstii/burenie-pod-zabor/" title="Бурение под забор ям ямобуром со строгой вертикальностью. Аренда ямобура для бурения ям под забор" class="aside-bar__link">
+                <img width="auto" height="auto" src="/images/burenie/yamobur-tadano-zabor-m2.jpg" title="Бурение под забор" alt="Бурение под забор ям ямобуром со строгой вертикальностью. Аренда ямобура для бурения ям под забор" />
+                 Бурение под забор
+                </a></li>
+                <li class="aside-bar__list-item"><a href="burenie-otverstii/burenie-pod-svai/" title="Бурение под сваи глубиной более 3 метров" class="aside-bar__link">
+                <img width="auto" height="auto" src="/images/burenie/yamobur-tadano-fundament-m2.jpg" title="Бурение под сваи (глубина более 3 метров)" alt="Бурение под сваи глубиной более 3 метров" />
+                Бурение под сваи (глубина более 3 метров)
+                </a></li>
+                <li class="aside-bar__list-item"><a href="burenie-otverstii/burenie-svai-pod-fundament/" title="Бурение свай под фундамент ямобуром. Аренда ямобура для бурения скважин под фундамет и буронабивные сваи по доступной цене" class="aside-bar__link">
+                <img width="auto" height="auto" src="/images/burenie/yamobur-tadano-fundament-m2.jpg" title="Бурение свай под фундамент (глубина до 3 метров)" alt="Бурение свай под фундамент ямобуром. Аренда ямобура для бурения скважин под фундамет и буронабивные сваи по доступной цене" />
+                Бурение свай под фундамент (глубина до 3 метров)
+                </a></li>
+                <li class="aside-bar__list-item"><a href="burenie-otverstii/burenie-tise-bur-mehanizirovannyi/" title="Бурение ТИСЭ. Механизированный бур ТИСЭ." class="aside-bar__link">
+                 <img width="auto" height="auto" src="/images/burenie/yamobur-minipogruzchik-tise-m2.jpg" title="Бурение ТИСЭ. Механизированный бур ТИСЭ." alt="Бурение ТИСЭ. Механизированный бур ТИСЭ." />
+                Бурение ТИСЭ, механизированный бур ТИСЭ
+                </a></li>
+                <li class="aside-bar__list-item"><a href="burenie-otverstii/montazh-vintovykh-svai/" title="Монтаж винтовых свай техникой. Установка винтовых свай" class="aside-bar__link">
+                <img width="auto" height="auto" src="/images/burenie/yamobur-tadano-vintovye-m2.jpg" title="Монтаж винтовых свай" alt="Монтаж винтовых свай техникой. Установка винтовых свай" />
+                Монтаж винтовых свай
+                </a></li>
+                <li class="aside-bar__list-item"><a href="burenie-otverstii/burenie-pod-stolby/" title="Бурение отверстий под столбы качественно и по доступнрй цене. Аренда ямобура для бурения отверстий под столбы" class="aside-bar__link">
+                <img width="auto" height="auto" src="/images/burenie/yamobur-tadano-lep-m2.jpg" title="Бурение отверстий под столбы ЛЭП" alt="Бурение отверстий под столбы качественно и по доступнрй цене. Аренда ямобура для бурения отверстий под столбы" />
+                Бурение отверстий под столбы ЛЭП
+                </a></li>
+                <li class="aside-bar__list-item"><a href="burenie-otverstii/burenie-yam-pod-nasajdeniya/" title="Бурения ям под насаждения ямобуром. Аренда ямобура для бурения под насаждения" class="aside-bar__link">
+                <img width="auto" height="auto" src="/images/burenie/yamobur-tadano-nasazhdeniia-m2.jpg" title="Бурение ям под насаждения" alt="Бурения ям под насаждения ямобуром. Аренда ямобура для бурения под насаждения" />
+                Бурение ям под насаждения
+                </a></li>
+                <li class="aside-bar__list-item"><a href="burenie-otverstii/burenie-pod-kolodecz-yamoburom/" title="Бурение под колодец ямобуром. Бурение колодцев под воду техникой" class="aside-bar__link">
+                <img width="auto" height="auto" src="/images/burenie/yamobur-tadano-kolodecz-m2.jpg" title="Бурение под колодец ямобуром" alt="Бурение под колодец ямобуром. Бурение колодцев под воду техникой" />
+                Бурение под колодец ямобуром
+                </a></li>
+              </ul>
+            </div>
+
+            <div class="aside-bar__item">
+              <div class="aside-bar__title">
+                <span>Прочие услуги</span>
+              </div>
+              <ul class="aside-bar__list">
+                <li class="aside-bar__list-item"><a href="prochie-uslugi/betonirovanie-svaj/" title="Бетонирование свай. Предоставляем услуги бетонирования буронабивных свай" class="aside-bar__link">
+                <img width="auto" height="auto" src="/images/betonirovanie/2.png" title="Бетонирование свай" alt="Бетонирование свай. Предоставляем услуги бетонирования буронабивных свай" />
+                Бетонирование свай
+                </a></li>
+                <li class="aside-bar__list-item"><a href="prochie-uslugi/ustanovka-stolbov-lep/" title="Установка столбов ЛЭП. Бурение и установка столбов освещения" class="aside-bar__link">
+                <img width="auto" height="auto" src="/images/burenie/yamobur-tadano-lep-montazh-m2.jpg" title="Установка столбов ЛЭП" alt="Установка столбов ЛЭП. Бурение и установка столбов освещения" />
+                Установка столбов ЛЭП</a></li>
+                <li class="aside-bar__list-item"><a href="prochie-uslugi/chistka-kolodtca-yamoburom/" title="Чистка колодца ямобуром с телескопической стрелой. Углубление колодца бурением внутри" class="aside-bar__link">
+                <img width="auto" height="auto" src="/images/burenie/yamobur-tadano-chistka-kolodtca-m2.jpg" title="Чистка колодца ямобуром" alt="Чистка колодца ямобуром с телескопической стрелой. Углубление колодца бурением внутри" />
+                Чистка колодца ямобуром
+                </a></li>
+                <li class="aside-bar__list-item"><a href="prochie-uslugi/shpuntovoe-ograzhdenie-kotlovanov/" title="Шпунтового ограждения котлована из труб. Бурение и погружение труб для ограждения котлована." class="aside-bar__link">
+                <img width="auto" height="auto" src="/images/burenie/yamobur-tadano-shpunt.jpg" title="Шпунтового ограждения котлована из труб" alt="Шпунтового ограждения котлована из труб. Бурение и погружение труб для ограждения котлована." />
+                Шпунтового ограждения котлована из труб
+                </a></li>
+              </ul>
+            </div>
+          </div>
+      </div>
     </main>
-    <footer class="page-footer">
+
+<footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__item page-footer__item--main">
           <a href="index.html" class="page-footer__logo">Аренда-Ямобура.ру</a>
@@ -568,8 +705,8 @@
         </div>
     </footer>
 
-  <div class="get-discount">
-   <a href="igra-yamobur/" title="Получить скидку 5%">Получить скидку 5%</a>
-  </div>
+    <div class="get-discount">
+     <a href="igra-yamobur/" title="Получить скидку 5%">Получить скидку 5%</a>
+    </div>
   </body>
 </html>

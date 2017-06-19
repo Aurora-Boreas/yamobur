@@ -1,10 +1,26 @@
 .about {
   display: none;
+  font-family: "Verdana", Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.7;
 
   .media(desktop; {
     display: flex;
     margin-bottom: 11px;
-  })
+  });
+
+  &--page-about {
+    display: flex;
+    text-align: center;
+    // order: 2;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    .media(desktop; {
+      width: 564px;
+      order: -1;
+    });
+  }
 }
 
 .about__wrapper {
@@ -12,8 +28,34 @@
     .wrapper-container();
     border-top: 1px solid #ababab;
     padding-top: 25px;
-    font-family: "Verdana", Arial, sans-serif;
-    font-size: 12px;
-    line-height: 1.7;
-  })
+
+    &--page-about {
+
+
+      .media(desktop; {
+      border: none;
+      padding-top: 0;
+      });
+    }
+  });
+}
+
+.about__title {
+  font-size: 24px;
+  line-height: 1.7;
+  color: #000;
+  margin-bottom: 30px;
+  font-family: "Verdana", Arial, sans-serif;
+  font-weight: normal;
+}
+
+.about__text {
+  margin-bottom: 11px;
+  text-align: justify;
+  font-family: "Verdana", Arial, sans-serif;
+}
+
+.about__link {
+  color: #3d8400;
+  font-weight: bold;
 }

@@ -1,4 +1,5 @@
 .cards-item {
+  .wrapper-container();
   background-color: @bgc-card;
   border-radius: 15px;
   padding-top: 10px;
@@ -22,7 +23,13 @@
     .media(desktop;{
       padding-left: 25px;
       padding-right: 25px;
-    })
+    });
+
+  &--yamobur {
+    .media(desktop; {
+      width: 100%;
+      })
+  }
 }
 
 .cards-item__description {
@@ -50,7 +57,7 @@
     display: block;
     min-height: 50px;
     margin-right: 0;
-    padding-top:  13px;
+    padding-top: 13px;
     border-bottom: 1px solid #ababab;
     font-family: "Verdana", Arial, sans-serif;
     font-size: 18px;

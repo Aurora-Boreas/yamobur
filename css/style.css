@@ -1649,8 +1649,8 @@ img {
   -ms-flex-pack: justify;
       justify-content: space-between;
   margin-top: 14px;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 13px;
+  line-height: 15px;
 }
 @media (min-width: 1150px) {
   .cards-item__text {

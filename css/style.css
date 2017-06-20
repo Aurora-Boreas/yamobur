@@ -1639,6 +1639,7 @@ img {
   }
 }
 .cards-item__text {
+  width: 100%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
@@ -1649,6 +1650,7 @@ img {
       justify-content: space-between;
   margin-top: 14px;
   font-size: 14px;
+  line-height: 17px;
 }
 @media (min-width: 1150px) {
   .cards-item__text {

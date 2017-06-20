@@ -1,5 +1,11 @@
 .main-nav {
   width: 100%;
+
+  .media(desktop; {
+    // position: relative;/
+    // .wrapper-container();/
+    margin-bottom: 15px;
+   });
 }
 
 .main-nav__wrapper {
@@ -10,10 +16,15 @@
   align-items: center;
 
   .media(desktop; {
-    .wrapper-container();
-    background: url('../images/main-menu-bg.png') no-repeat;
-    height: 65px;
-    line-height: 50px;
+     .wrapper-container();//
+     background: transparent url('../images/main-menu-bg.png') no-repeat;// 100% 70%;
+     height: 65px;//
+     line-height: 50px;//
+     // position: relative;
+     // height: 134px;
+    // width: 1012px;
+    // margin: 0 auto;
+    // bottom: -32px;
   });
 }
 
@@ -75,24 +86,7 @@
       flex-direction: row;
       justify-content: space-around;
       align-items: flex-start;
-      //
-      padding-left: 20px;
-      padding-top: 48px;
-      //
-
-      & a {
-        // padding: 0;
-      }
-      //// position: relative;
-      //// top: 35px;
-      //// width: 100%;
-      //// flex-direction: row;
-      //// justify-content: space-around;
-
-      //// & a {
-      ////   margin: 0px 16px;
-      ////   padding-top: 0;
-      //// }
+      height: 65px;
     });
 
 }
@@ -110,68 +104,36 @@
 
   background-color: #bb3d0e;
 
+  .media(desktop; {
+    background-color: transparent;
+    & a {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  });
+
   &--game {
     display: none;
+
 
     .media(desktop; {
 
         display: flex;
         position: relative;
         width: 174px;
-        padding-top: 61px;
-        top: -55px;
-        background: url('../images/game-menu-bg@.png') no-repeat;
+        height: 134px;
+        top: -65px;
+
         & a,
         & a:hover {
         color: transparent;
         }
 
+        & a {
+         background: url('../images/game-menu-bg@.png') no-repeat;
+        }
     });
   }
-
-
-
-  .media(desktop; {
-      display: flex;
-      background-color: transparent;
-
-  });
-  //     position: relative;
-  //     top: -64px;
-  //     padding-top: 64px;
-
-
-  //     &--game {
-  //       margin-right: 0;
-  //       background: url('../images/game-menu-bg.png') no-repeat;
-  //       height: 134px;
-  //       margin-right: 0;
-  //       position: relative;
-  //       top: -64px;
-  //       width: 175px;
-  //       padding-top: 0;
-
-  //       & a {
-  //         position: relative;
-  //         top: 70px;
-  //         left: 0;
-  //         text-align: left;
-  //         width: 64px;
-  //         color: #14400f;
-  //         display: block;
-  //         font-family: "Tahoma";
-  //         font-size: 14px;
-  //         font-weight: bold;
-  //         line-height: 18px;
-
-  //         &:hover,
-  //         &:active {
-  //           color: #14400f;
-  //         }
-  //       }
-  //     }
-  // });
-
 }
 
 

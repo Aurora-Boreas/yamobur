@@ -168,25 +168,60 @@
 
           <section class="order-form">
             <div class="order-form__wrapper">
-              <h2 class="order-form__title"></h2>
+              <h2 class="order-form__title">Заказать ямобур</h2>
               <form action="" class="order-form__form">
-                <div class="checkbox-group">
+                <div class="checkbox-group checkbox-group--order-form">
 
-                    <div class="checkbox-group__item checkbox-group__item--manualtechnique">
-                        <input type="radio" name="technique" id="manual-technique" class="checkbox-group__input"/>
-                        <label for="manual-technique" class="checkbox-group__label">Ручная<br>техника</label>
-                    </div>
-                    <div class="checkbox-group__item checkbox-group__item--minitruck">
-                        <input type="radio" checked="checked" name="technique" id="mini-truck" class="checkbox-group__input"/>
-                        <label for="mini-truck" class="checkbox-group__label">Мини<br>погрузчик</label>
-                    </div>
-                    <div class="checkbox-group__item checkbox-group__item--autowagon">
-                        <input type="radio" name="technique" id="automobile-wagon" class="checkbox-group__input"/>
-                        <label for="automobile-wagon" class="checkbox-group__label">Грузовой<br>автомобиль</label>
-                    </div>
+                  <div class="checkbox-group__item checkbox-group__item--manualtechnique">
+                      <span class="checkbox-group__selected">Вы выбрали</span>
+                      <input type="radio" name="technique" id="manual-technique" class="checkbox-group__input"/>
+                      <label for="manual-technique" class="checkbox-group__label checkbox-group__label--order-form">Ручная<br>техника</label>
+                  </div>
+                  <div class="checkbox-group__item checkbox-group__item--minitruck">
+                      <span class="checkbox-group__selected">Вы выбрали</span>
+                      <input type="radio" checked="checked" name="technique" id="mini-truck" class="checkbox-group__input"/>
+                      <label for="mini-truck" class="checkbox-group__label">Мини<br>погрузчик</label>
+                  </div>
+                  <div class="checkbox-group__item checkbox-group__item--autowagon">
+                      <span class="checkbox-group__selected">Вы выбрали</span>
+                      <input type="radio" name="technique" id="automobile-wagon" class="checkbox-group__input"/>
+                      <label for="automobile-wagon" class="checkbox-group__label">Грузовой<br>автомобиль</label>
+                  </div>
                 </div>
 
-                <hr class="separator">
+                <div class="order-type">
+                  <ul class="order-type__yamobur-type">
+                    <li class="order-type__type order-type__type--manual" id="type-manual">
+                      <div class="order-type__selected">
+                        <input name="yamobur_type" value="<strong>Ручная техника</strong>" type="hidden">
+                          <strong>Вы выбрали</strong>
+                      </div>
+                      <div class="order-type__icon">&nbsp;</div>
+                      <div class="order-type__caption">
+                        <strong>Ручная техника</strong>
+                      </div>
+                    </li>
+                    <li class="order-type__type order-type__type--mini active" id="type-mini">
+                      <div class="order-type__selected">
+                        <input name="yamobur_type" value="<strong>Мини погрузчик</strong>" type="hidden">
+                          <strong>Вы выбрали</strong>
+                      </div>
+                      <div class="order-type__icon">&nbsp;</div>
+                      <div class="order-type__caption"><strong>Мини погрузчик</strong></div>
+                    </li>
+                    <li class="order-type__type order-type__type--truck" id="type-truck">
+                      <div class="order-type__selected">
+                        <input name="yamobur_type" value="<strong>Грузовой автомобиль</strong>" type="hidden">
+                          <strong>Вы выбрали</strong>
+                      </div>
+                      <div class="order-type__icon">&nbsp;</div>
+                      <div class="order-type__caption"><strong>Грузовой автомобиль</strong>
+                    </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <hr class="separator separator--short">
 
                 <div class="order-form__alert">
                   <p>Наш менеджер свяжется с Вами и подскажет, какая техника лучше подойдет именно для Вашего заказа!</p>
@@ -194,11 +229,11 @@
 
                 <div class="order-form__item">
                     <label class="width-200" for="name">Ваше имя:</label>
-                    <input type="text" name="name" size="40" id="name"  value="" />
+                    <input type="text" name="name" size="40" id="name"  value="" required/>
                 </div>
                 <div class="order-form__item">
                     <label class="width-200" for="contact-phone">Ваш контактный телефон:</label>
-                    <input type="text" name="contact_phone" size="40" id="contact-phone"  value="" />
+                    <input type="text" name="contact_phone" size="40" id="contact-phone"  value=""  required/>
                 </div>
                 <div class="order-form__item">
                     <label class="width-200" for="phone">Доп. телефон:</label>
@@ -279,7 +314,7 @@
 
                     <li class="order-related__list-item">
                       <a href="burenie-otverstii/burenie-pod-svai/" title="Бурение под сваи глубиной более 3 метров">
-                        <img width="174" height="131" src="assets/images/burenie/burenie-fundament-small.png" title="Бурение под сваи (глубина более 3 метров)" alt="Бурение под сваи глубиной более 3 метров" />
+                        <img width="174" height="131" src="images/burenie/burenie-fundament-small.png" title="Бурение под сваи (глубина более 3 метров)" alt="Бурение под сваи глубиной более 3 метров" />
                         <strong>Бурение под сваи (глубина более 3 метров)</strong>
                       </a>
                     </li>

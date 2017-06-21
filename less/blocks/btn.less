@@ -119,4 +119,57 @@
     background-image: linear-gradient(to bottom, @bgc-ob-d 20%, @bgc-ob-l 80%);
   }
 
+  &--contacts {
+    width: 217px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(to bottom, #d78015 5%, #e5a331 95%);
+    box-shadow: @bgc-gb-sh 1px 2px 3px;
+  }
+
+  &--contacts:hover,
+  &--contacts:active {
+    background: linear-gradient(to bottom, #e5a331 5%, #d78015 95%);
+  }
+
+  &--city {
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-image: linear-gradient(to bottom, @bgc-gb-l 20%, @bgc-gb-d 80%);
+    box-shadow: @bgc-gb-sh 1px 2px 3px;
+
+    .media(tablet; {
+      width: 330px;
+    });
+  }
+
+
+
+  &--city:hover,
+  &--city:active {
+    background-image: linear-gradient(to bottom, @bgc-gb-d 20%, @bgc-gb-l 80%);
+  }
+
+  &--map {
+    background: url("../images/btn-map.png") no-repeat;
+    height: 53px;
+    width: 218px;
+    color: #476203;
+    margin: 10px auto;
+    font-size: 18px;
+    font-family: Verdana,sans-serif;
+    text-align: center;
+  }
+
+  &--map:hover {
+    color: @red-col;
+  }
+
 }

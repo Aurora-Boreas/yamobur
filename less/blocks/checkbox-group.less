@@ -24,6 +24,10 @@
     margin: 0;
    });
   }
+
+  &--order-form {
+    display: none;
+  }
 }
 
 .checkbox-group--page-cost .checkbox-group__item {
@@ -45,18 +49,19 @@
     display: flex;
     flex-direction: row;
     background: none;
-  })
+  });
+
+
 }
 
 .checkbox-group__input[type='radio'] {
-    display: none;
+  display: none;
 
-    .media(desktop; {
-      display: block;
-      margin-right: 10px;
-      margin-top: 33px;
-    });
-
+  .media(desktop; {
+    display: block;
+    margin-right: 10px;
+    margin-top: 33px;
+  });
 }
 
 .checkbox-group__input--page-cost[type='radio'] {
@@ -66,7 +71,6 @@
     // height: 13px;
     });
   }
-
 
 .checkbox-group__label {
   width: 100%;
@@ -84,7 +88,7 @@
     padding-top: 27px;
     padding-left: 64px;
     padding-bottom: 0;
-    })
+    });
 }
 
 .checkbox-group__label:hover {
@@ -110,17 +114,17 @@
   position: absolute;
   left: calc(50%-28px);
   top: 0;
-    width: 58px;
-    height: 60px;
+  width: 58px;
+  height: 60px;
 
-    .media(tablet; {
-       left: 50px;
-      });
+  .media(tablet; {
+     left: 50px;
+    });
 
-    .media(desktop; {
-      left: 0;
-      top: 0;
-    })
+  .media(desktop; {
+    left: 0;
+    top: 0;
+  });
 }
 
 .checkbox-group__item--manualtechnique label::before {
@@ -137,5 +141,4 @@
   background: transparent url('../images/automobile-wagon-ico.png') no-repeat;
   z-index: 100;
 }
-
 
